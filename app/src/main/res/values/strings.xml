@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">W3-HW-01</string>
+    <string name="lbl_btn_save">SAVE</string>
+    <string name="lbl_et_search_input">ENTER LOGIN USERNAME HERE</string>
+    <string name="lbl_btn_search">SEARCH</string>
+    <string name="lbl_address">ADDRESS:</string>
+    <string name="lbl_email">EMAIL: </string>
+    <string name="lbl_cell">CELL: </string>
+    <string name="lbl_phone">PHONE: </string>
+    <string name="lbl_date_of_birth">DATE OF BIRTH:</string>
+    <string name="lbl_gender">GENDER: </string>
+    <string name="lbl_full_name">FULL NAME: </string>
+    <string name="lbl_login_username">LOGIN USERNAME: </string>
+    <string name="lbl_show_all">DISPLAY USERNAMES</string>
+    <string name="lbl_all_saved_users">ALL SAVED USERS: </string>
+    <string name="lbl_result">%1$s</string>
+</resources>
