@@ -104,14 +104,14 @@ public class SearchActivity extends AppCompatActivity {
             String id = cursor.getString(cursor.getColumnIndexOrThrow(FeedEntry.COLUMN_NAME_ID));
             String register = cursor.getString(cursor.getColumnIndexOrThrow(FeedEntry.COLUMN_NAME_REGISTERED));
 
-            tvLogin.append(login);
-            tvName.append(name);
-            tvGender.append(gender);
-            tvLocation.append(location);
-            tvPhone.append(phone);
-            tvCell.append(cell);
-            tvEmail.append(email);
-            tvDOB.append(dob);
+            tvLogin.setText(getString(R.string.lbl_login_username) + login);
+            tvName.setText(getString(R.string.lbl_full_name) + name);
+            tvGender.setText(getString(R.string.lbl_gender) + gender);
+            tvLocation.setText(getString(R.string.lbl_address) + location);
+            tvPhone.setText(getString(R.string.lbl_phone) + phone);
+            tvCell.setText(getString(R.string.lbl_cell) + cell);
+            tvEmail.setText(getString(R.string.lbl_email) + email);
+            tvDOB.setText(getString(R.string.lbl_date_of_birth) + dob);
             //tvNat.append(nat);
             //tvID.append(id);
             //tvRegister.append(register);

@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            tv_Name.setText(nowResult.getLogin().getUsername());
-            tv_Email.setText(nowResult.getEmail());
-            tv_Locate.setText(nowResult.getLocation().toString());
+            tv_Name.setText(getString(R.string.lbl_full_name) + nowResult.getLogin().getUsername());
+            tv_Email.setText(getString(R.string.lbl_email) + nowResult.getEmail());
+            tv_Locate.setText(getString(R.string.lbl_address) + nowResult.getLocation().toString());
             loadImageView(nowResult.getPicture().getThumbnail());
         }
     };
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         while(cursor.moveToNext()) {
             long entryID = cursor.getLong(cursor.getColumnIndexOrThrow(FeedEntry._ID));
             String login = cursor.getString(cursor.getColumnIndexOrThrow(FeedEntry.COLUMN_NAME_LOGIN));
-            tvShowAll.append(String.format(getString(R.string.lbl_result), "\n" + login));
+            tvShowAll.append(String.format(getString(R.string.lbl_result), "\n" + entryID + ": " + login));
         }
     }
 

@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
     tools:context="com.example.alvin.w3_hw_01.MainActivity">
 
     <TextView
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content" />
     <ImageView
         android:id="@+id/iv_userPic"
+        android:padding="@dimen/activity_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button
